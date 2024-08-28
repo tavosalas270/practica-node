@@ -1,0 +1,15 @@
+### Metodo GET
+GET http://localhost:1234/pokemon/ditto
+
+
+### Metodo POST
+POST http://localhost:1234/pokemon
+Content-Type: application/json
+
+{
+    "name": "ditto",
+    "type": "normal",
+    "moves": [
+        "transform"
+    ]
+}

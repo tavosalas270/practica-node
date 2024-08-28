@@ -1,0 +1,32 @@
+### Recuperar todas las peliculas
+GET http://localhost:1234/movies
+
+### Recuperar una pelicula por id
+GET http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### Recuperar todas las peliculas por genero
+GET http://localhost:1234/movies?genre=Adventure
+
+### Crear una pelicula con POST
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+  "title": "Dragon Ball Z: la batalla de los dioses",
+  "year": 2013,
+  "director": "Masahiro Hosoda",
+  "duration": 105,
+  "poster": "https://es.web.img3.acsta.net/pictures/14/03/13/09/32/445665.jpg",
+  "genre": ["Action"]
+}
+
+
+### Actualizar una pelicula
+
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+  "title": "Holis",
+  "year": 2011
+}
