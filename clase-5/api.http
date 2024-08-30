@@ -2,7 +2,7 @@
 GET http://localhost:1234/movies
 
 ### Recuperar una pelicula por id
-GET http://localhost:1234/movies/c3e3665a-6655-11ef-a9ca-54b20390c007
+GET http://localhost:1234/movies/c4060603-66ee-11ef-a9ca-54b20390c007
 
 ### Recuperar todas las peliculas por genero
 GET http://localhost:1234/movies?genre=Action
@@ -12,12 +12,12 @@ POST http://localhost:1234/movies
 Content-Type: application/json
 
 {
-  "title": "Dragon Ball Z: la batalla de los dioses",
-  "year": 2013,
+  "title": "Dragon Ball Z: La resurreción de Freezer",
+  "year": 2015,
   "director": "Masahiro Hosoda",
-  "duration": 105,
-  "poster": "https://es.web.img3.acsta.net/pictures/14/03/13/09/32/445665.jpg",
-  "genre": ["Action"]
+  "duration": 125,
+  "poster": "https://static.wikia.nocookie.net/doblaje/images/0/09/LatinAmerican_ResurrectionF_Poster.png/revision/latest?cb=20150319060957&path-prefix=es",
+  "genre": ["Sci-Fi", "Action", "Adventure"]
 }
 
 
@@ -30,3 +30,6 @@ Content-Type: application/json
   "title": "La batalla de los demonios",
   "year": 2011
 }
+
+### Eliminar una pelicula por id
+DELETE http://localhost:1234/movies/6c962927-66ee-11ef-a9ca-54b20390c007
