@@ -23,12 +23,11 @@ Content-Type: application/json
 
 ### Actualizar una pelicula
 
-PATCH http://localhost:1234/movies/579bf048-1310-45b5-b232-c85f636a591d
+PATCH http://localhost:1234/movies/6c9633aa-66ee-11ef-a9ca-54b20390c007
 Content-Type: application/json
 
 {
-  "title": "La batalla de los demonios",
-  "year": 2011
+  "rate": 7.5
 }
 
 ### Eliminar una pelicula por id
